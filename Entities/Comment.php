@@ -21,17 +21,18 @@ class Comment extends CrudModel
         'update' => 'Modules\Icomments\Http\Requests\UpdateCommentRequest',
     ];
 
-    protected $fillable = [
-        'comment',
-        'approved',
-        'internal',
-        'commentable_type',
-        'commentable_id',
-        'guest_name',
-        'guest_email',
-        'user_id',
-        'options',
-    ];
+  protected $fillable = [
+    'comment',
+    'approved',
+    'internal',
+    'commentable_type',
+    'commentable_id',
+    'guest_name',
+    'guest_email',
+    'user_id',
+    'options',
+    "type"
+  ];
 
     //protected $with = ['commenter', 'commentable'];
     protected $casts = [
